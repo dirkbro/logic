@@ -1,0 +1,12 @@
+{ Assume: }
+(1) | Universal quantifier for x [P(x) ^ Q(x)]|
+    | {Assume: }
+(2) |   | var y;|
+    |   | {Universal-elim on (1) and (2): }
+(3) |   |  P(y) ^ Q(y)
+    |   |  {^-elim on (3): }
+(4) |   |  P(y)
+    |   {Universal-intro on (2) and (4): }
+(5) | Universal quantifier for y [P(y)]
+    {-->-intro on (1) and (5): }
+(6) Universal quantifier for x [P(x) ^ Q(x)] --> Universal quantifier for y [P(y)]
